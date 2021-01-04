@@ -37,6 +37,6 @@ classes.doLast {
         println "aspectjrt: $aspectjrt"
         println "aspectjtools: $aspectjtools"
 //        commandLine "cmd", "/c", "java -cp $aspectjtools org.aspectj.tools.ajc.Main -cp $aspectjrt -source 1.8 -sourceroots src\\main\\java\\ -d aop\\classes"
-        commandLine "cmd", "/c", "java -cp $aspectjtools org.aspectj.tools.ajc.Main -cp $aspectjrt -source 1.8 -inpath build\\classes\\java\\main -d build\\classes\\java\\main"
+        commandLine "cmd", "/c", "java -cp $aspectjtools org.aspectj.tools.ajc.Main -cp $aspectjrt -source 1.8 -inpath build\\classes\\java\\main -d build\\classes\\java\\main -outxml"
     }
 }
